@@ -9,18 +9,11 @@
     
 }
 
-.clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
 body {
-    background-image: linear-gradient(rgba(62, 20, 20, 0.4), rgba(62, 20, 20, 0.4)), url(../images/back.jpg);
+    background-image: linear-gradient(rgba(62, 20, 20, 0.4), rgba(62, 20, 20, 0.4)), url(../images/background.jpeg);
     background-size: cover;
     background-position: center;
-    font-family: Lato;
-    font-weight: 300;
+    font-family: 'ZCOOL KuaiLe', cursive;
     position: relative;
     height: 100vh;
     color: #555;
@@ -35,6 +28,7 @@ body {
     background-color: #fff;
     box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
     overflow: hidden;
+    border-radius: 10px;
 }
 
 .player-0-panel,
@@ -45,6 +39,11 @@ body {
     padding: 100px;
 }
 
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
 
 /**********************************************
@@ -66,30 +65,35 @@ body {
     text-align: center;
     font-size: 80px;
     font-weight: 100;
-    color: #EB4D4D;
+    color: #e74c3c;
     margin-bottom: 130px;
 }
 
-.active { background-color: #f7f7f7; }
-.active .player-name { font-weight: 300; }
+.active {
+    background-color: #f7f7f7;
+}
+.active .player-name {
+    font-weight: 300;
+}
 
 .active .player-name::after {
     content: "\2022";
     font-size: 47px;
     position: absolute;
-    color: #EB4D4D;
+    color: #e74c3c;
     top: -7px;
     right: 10px;
     
 }
 
 .player-current-box {
-    background-color: #EB4D4D;
+    background-color: #e74c3c;
     color: #fff;
-    width: 40%;
+    width: 50%;
     margin: 0 auto;
     padding: 12px;
     text-align: center;
+    border-radius: 50%;
 }
 
 .player-current-label {
@@ -104,6 +108,7 @@ body {
 }
 
 button {
+    font-family: 'ZCOOL KuaiLe', cursive;
     position: absolute;
     width: 200px;
     left: 50%;
@@ -111,7 +116,6 @@ button {
     color: #555;
     background: none;
     border: none;
-    font-family: Lato;
     font-size: 20px;
     text-transform: uppercase;
     cursor: pointer;
@@ -119,15 +123,20 @@ button {
     transition: background-color 0.3s, color 0.3s;
 }
 
-button:hover { font-weight: 600; }
-button:hover i { margin-right: 20px; }
+button:hover { 
+    font-weight: 600;
+    color: #e74c3c;
+}
+button:hover i { 
+    margin-right: 20px;
+}
 
 button:focus {
     outline: none;
 }
 
 i {
-    color: #EB4D4D;
+    color: #e74c3c;
     display: inline-block;
     margin-right: 15px;
     font-size: 32px;
@@ -141,14 +150,21 @@ i {
 .btn-roll { top: 403px;}
 .btn-hold { top: 467px;}
 
+
 .dice {
     position: absolute;
     left: 50%;
     top: 178px;
     transform: translateX(-50%);
     height: 100px;
+    border: 1px solid red;
     box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.10);
 }
 
-.winner { background-color: #f7f7f7; }
-.winner .player-name { font-weight: 300; color: #EB4D4D; }
+.winner { 
+    background-color: #f7f7f7;
+}
+.winner .player-name {
+    font-weight: 300; 
+    color: #e74c3c;
+}
