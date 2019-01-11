@@ -1,5 +1,5 @@
 # dice-game
-# A 2 Player dice game
+https://nikolaperisic.github.io/dice-game/
 
 How to play:
 The first player with 100 points or more wins the game
